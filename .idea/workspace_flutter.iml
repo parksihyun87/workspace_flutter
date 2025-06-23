@@ -18,6 +18,9 @@
       <excludeFolder url="file://$MODULE_DIR$/cheerupteam/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/cheerupteam/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/cheerupteam/build" />
+      <excludeFolder url="file://$MODULE_DIR$/container/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/container/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/container/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

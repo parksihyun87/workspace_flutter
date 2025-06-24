@@ -120,7 +120,7 @@ class _ListViewPageState extends State<ListViewPage> {
         title: Text("ListView", style: TextStyle(color: Colors.grey)),
         backgroundColor: Colors.white,
       ),
-      body: ListView.builder(
+      body: ListView.builder(//리스트 뷰 빌더가 만들어냄.
         // 스태틱 인용
         itemCount: ListViewPage.titleList.length, //맵처럼 출력이 진행된다.
         itemBuilder: (context, index) {

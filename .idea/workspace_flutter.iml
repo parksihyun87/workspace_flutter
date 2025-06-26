@@ -66,6 +66,12 @@
       <excludeFolder url="file://$MODULE_DIR$/stack_practice/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/stack_practice/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/stack_practice/build" />
+      <excludeFolder url="file://$MODULE_DIR$/future/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/future/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/future/build" />
+      <excludeFolder url="file://$MODULE_DIR$/loginjwt/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/loginjwt/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/loginjwt/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

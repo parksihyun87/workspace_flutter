@@ -36,9 +36,33 @@ class _DiceState extends State<Dice> {
         errorMessage = utf8.decode(
           response.bodyBytes,
         ); // 문자열은 그냥 유니코드로 디코드만 하면 됨.
+      } else if(response.statusCode==456){
+        await accessTokenRequest();
+        await adminRequest();
       }
     } catch (e) {
       print("Error: ${e}");
+    }
+  }
+  //리이슈 과정
+  Future<void> accessTokenRequest() async{
+    Token provider = context.read<Token>();
+
+    print("액세스 토큰 재발급 요청");
+    final url= Uri.parse("http://10.0.2.2:8080/reissue");//(십,영,이,이)4가지
+    final header= {'Cookie': provider.refreshToken};
+
+    try{
+      final response = await http.post(url,headers: header);
+      if(response.statusCode ==200){
+        final accessToken = response.headers['authorization'];
+        provider.accessToken=accessToken!;
+      }else{
+        print("Error:${response.statusCode}");
+      }
+
+    }catch(e){
+      print("Error:${e}");
     }
   }
 
